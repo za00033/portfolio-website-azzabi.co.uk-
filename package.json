@@ -1,0 +1,28 @@
+{
+  "name": "za00033.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/za00033/za00033.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/za00033/za00033.github.io/issues"
+  },
+  "homepage": "https://github.com/za00033/za00033.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.0",
+    "jquery": "^3.6.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="img/za_logo1.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portofolio Website</title>
+  </head>
+  <body class="w-screen font-mono text-blue-900 bg-green-100" style="transition: background-color 1s ease;">
+    <!--Below is a hidden div for tailwind to add these colors when compailing since Tailwind does not add classes if they are not used in the code-->
+    <div class="hidden bg-slate-100 bg-red-100 bg-blue-100 bg-green-100 bg-red-300 bg-blue-300 bg-green-300"></div>
+
+    <!--Navbar-->
+    <nav class="w-auto sticky top-0 z-50 flex flex-wrap py-6 backdrop-opacity-10 backdrop-invert bg-grey-400/90 drop-shadow-xl">
+      <div class="flex justify-between container mx-auto">
+          <div class="px-5">
+            <img class="w-20 h-auto rounded-lg mx-auto" src="img/za_logo1.png" alt="za_logo">
+          </div>
+          <div class="space-x-6 text-sm hidden md:flex px-5">
+            <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300" href="#about"><sup class="text-blue-400">01.</sup>About</a>
+            <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300" href="#exp"><sup class="text-blue-400">02.</sup>Knowledge</a>
+            <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300" href="#pro"><sup class="text-blue-400">03.</sup>Projects</a>
+            <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300" href="mailto:ziad@azzabi.co.uk"><sup class="text-blue-400">04.</sup>Contact</a>
+            <a class="" href="pdf/Ziad_Azzabi_CV.pdf" target="_blank">
+              <button class="text-sm text-blue-900 border border-blue-900 hover:bg-blue-400 transition duration-300 rounded-full py-2 px-5">Resume | CV</button>
+            </a>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex justify-end">
+            <button class="outline-none mobile-menu-button">
+              <svg class="w-6 h-6 text-blue-900" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="hidden mobile-menu py-5 container mx-auto">
+        <ul class="divide-y divide-blue-400">
+          <li><a href="#about" class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400"><sup class="text-blue-400">01.</sup>About</a></li>
+          <li><a href="#exp" class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400 transition duration-300"><sup class="text-blue-400">02.</sup>Knowledge</a></li>
+          <li><a href="#pro" class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400 transition duration-300"><sup class="text-blue-400">03.</sup>Projects</a></li>
+          <li><a href="mailto:ziad@azzabi.co.uk" class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400 transition duration-300"><sup class="text-blue-400">04.</sup>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="md:container mx-auto">
+      <!--flex auto height & width div-->
+      <div class="">
+
+        <div class="panel justify-around items-center min-h-screen js-show-on-scroll mx-auto xs:max-w-full md:max-w-2xl xl:max-w-4xl xs:px-0 md:px-14 md:my-48 opacity-0 animate-fadeIn1" data-color="green-100">
+        <div class="py-20 mx-auto my-auto relative px-4 bg-white shadow-lg sm:rounded-3xl md:p-20 bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
+          <p class="xs:text-md md:text-lg xs:text-center">Hi, my name is</p>
+            <h1 class="xs:text-center xs:text-2xl md:text-5xl font-semibold py-4">
+              Ziad Azzabi
+            </h1>
+            <h1 class="xs:text-md md:text-lg xs:text-center">
+              I build things that serve a purpose
+            </h1>
+            <div class="xs:text-center pt-5">
+              <button class="text-sm text-blue-900 border border-blue-900 hover:bg-blue-400 transition duration-300 rounded-full py-2 px-5">Check out my projects</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="about" class="panel justify-around items-center min-h-screen js-show-on-scroll mx-auto xs:max-w-md sm:max-w-md md:max-w-2xl xl:max-w-4xl xs:px-8 sm:px-8 px-14 my-48 opacity-0" data-color="slate-100">
+        <div class="py-20 mx-auto my-auto relative px-4 bg-white shadow-lg sm:rounded-3xl md:p-20 bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
+          <div class="pt-4 pb-10">
+            <h1 class="expl1_h1 xs:text-2xl md:text-5xl font-semibold">
+              <sup class="text-blue-400">01.</sup>About
+              <hr class="xs:hidden md:grid ml-72">
+            </h1>
+            <p class="expl1 hidden text-sm pt-5">About<sup class="text-blue-400">noun</sup> [on the subject of, or connected with]</p>
+          </div>
+          
+            <div class="grid xs:grid-cols-1 md:grid-cols-3 gap-4">
+              <!--1st Column with occupying 2 columns using col-span-2 class-->
+              <div class="md:col-span-2">
+                <p class="xs:text-sm md:text-base">
+                Humble special asset in any team, considered to be fast learner, dedicated, loyal &amp; innovative, ready to put his skills/mindset in the job.
+                </p>
+                <p class="xs:text-sm md:text-base py-4">
+                  Passion is the main resource for success, I utilise it fully to benefit thew work place &amp; myself.
+                </p>
+
+                <div class="flex flex-row">
+                  <a class="mx-auto px-1" href="pdf/Ziad_Azzabi_CV.pdf" target="_blank">
+                    <button class="xs:w-28 md:w-48 xs:text-sm md:text-base text-blue-900 border border-blue-900 hover:bg-blue-400 rounded-full py-2 xs:px-1 md:px-5">View CV</button>
+                  </a>
+                  <a class="mx-auto px-1" href="pdf/Ziad_Azzabi_CV.pdf" download="">
+                    <button class="xs:w-28 md:w-48 xs:text-sm md:text-base text-blue-900 border border-blue-900 hover:bg-blue-400 rounded-full py-2 xs:px-1 md:px-5">Download CV</button>
+                  </a>
+                </div>
+
+              </div>
+              <!--2nd Column-->
+              <div class="xs:hidden md:grid mx-auto">          
+                <img class="xs:w-28 md:w-48 h-auto rounded-lg mx-auto" src="img/ziad.png" alt="img_of_ziad_azzabi">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="exp" class="panel justify-around items-center min-h-screen js-show-on-scroll mx-auto xs:max-w-md md:max-w-2xl xl:max-w-4xl xs:px-8 px-14 my-48 opacity-0" data-color="blue-100">
+          <div class="py-20 mx-auto my-auto relative px-4 bg-white shadow-lg sm:rounded-3xl md:p-20 bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
+            <div class="pt-4 pb-10">
+              <h1 class="expl2_h1 xs:text-2xl md:text-5xl font-semibold">
+                <sup class="text-blue-400">02.</sup>Knowledge
+                <hr class="xs:hidden md:grid ml-80">
+              </h1>
+              <p class="expl2 hidden text-sm pt-5">Knowledge<sup class="text-blue-400">noun</sup> [understanding of or information about a subject that you get by experience or study]</p>
+            </div>
+            <div class="mx-auto">
+
+              <h3 class="xs:text-md md:text-xl pl-2 pb-2 font-semibold md:text-end">Work Experience</h3>  
+              <details class="open:bg-blue-400 duration-300 rounded-t-lg border-t border-x border-blue-400 hover:bg-blue-400">
+                  <summary class="relative bg-inherit px-5 py-3 xs:text-md md:text-2xl cursor-pointer xs:h-20 md:h-28">
+                    Sollatek
+                    <img class="xs:w-12 md:w-20 h-auto absolute inset-y-0 right-0 my-4 mx-4" src="img/Sollatek_logo.png" alt="Sollatek_logo">
+                  </summary>
+                <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                  <div class="pb-2">
+                    <h3 class="xs:text-md md:text-lg font-semibold">Electronics Design Engineer <span class="xs:text-md md:text-lg inline">[2015 - Preset]</span></h3>
+                  </div>
+                  <li class="xs:text-xs md:text-lg pb-2">Responsible for hardware design of a Port Expander for Sollateks’ energy management devices which features GSM, BLE &amp; WiFi connectivity (plugins).</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Heavily involved in technical communication with stakeholders and clients for future proofing their needs.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Designed and maintained hardware and firmware of multiple displays that connect to Sollateks’ cooler controllers.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Involved in developing capacitive touch switches for one of Sollateks’ cooler controllers.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Fully designed and deployed various automated PC based test procedures for Sollatek products to facilitate production.</li>
+                </div>
+                <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                  <div class="pb-2">
+                    <h3 class="xs:text-md md:text-lg font-semibold">Graduate Electronics Design Engineer <span class="xs:text-md md:text-lg inline">[2015 - 2016]</span></h3>
+                  </div>
+                  <li class="xs:text-xs md:text-lg pb-2">Fully designed the hardware and firmware of a Programming Dongle that is used to reflash ST microcontrollers (including C# GUI).</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Identified and investigated Problems and known Errors, including preventing the replication of problems found.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Designed Graphical User Interface using C# for a developed product.</li>
+                </div>
+                <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                  <div class="pb-2">
+                    <h3 class="xs:text-md md:text-lg font-semibold">Electronics Design Internship <span class="xs:text-md md:text-lg inline">[Summer 2014]</span></h3>
+                  </div>
+                  <li class="xs:text-xs md:text-lg pb-2">Responsible for finding the root cause of issues present in returned products, providing full analysis reports on findings from various tests to narrow down and prove the root cause. Including providing a suitable solution to the issue.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Heavily involved in creating and issuing firmware for a GSM modem, with exposure to mobile &amp; internet protocols.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Designed Graphical User Interface using C# for a developed product.</li>
+                </div>
+              </details>
+
+              <details class="open:bg-blue-400 duration-300 border-t border-x border-blue-400 hover:bg-blue-400">
+                <summary class="relative bg-inherit px-5 py-3 xs:text-md md:text-2xl cursor-pointer xs:h-20 md:h-28">
+                  MasterFlip
+                  <img class="xs:w-14 md:w-24 h-auto absolute top-0 right-0 my-6 mx-4" src="img/MF_logo.png" alt="MasterFlip_logo">
+                </summary>
+              <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                <div class="pb-2">
+                  <h3 class="xs:text-md md:text-lg font-semibold">Paint Specialist &amp; Co-Founder<span class="xs:text-md md:text-lg inline">[2017 - 2019]</span></h3>
+                </div>
+                <li class="xs:text-xs md:text-lg pb-2">Co-founded a fashion brand that manufactures handmade Apparel products.</li>
+                <li class="xs:text-xs md:text-lg pb-2">Developed durable special effects paint that changes colour depending on an affect (Hydro, Heat &amp; UV light).</li>
+                <li class="xs:text-xs md:text-lg pb-2">Developed and maintained an e-commerce website for the business.</li>
+                <li class="xs:text-xs md:text-lg pb-2">Sold after maturity.</li>
+              </div>
+              </details>
+              <details class="open:bg-blue-400 duration-300 border border-blue-400 hover:bg-blue-400">
+                <summary class="relative bg-inherit px-5 py-3 xs:text-md md:text-2xl cursor-pointer xs:h-20 md:h-28">
+                  Almenuo
+                  <img class="xs:w-12 md:w-20 h-auto absolute inset-y-0 right-0 my-4 mx-4" src="img/Almenuo_logo1.png" alt="Almenuo_logo">
+                </summary>
+              <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                <div class="pb-2">
+                  <h3 class="xs:text-md md:text-lg font-semibold">Technology Strategist &amp; Co-Founder<span class="xs:text-md md:text-lg inline">[2016 - 2017]</span></h3>
+                </div>
+                <li class="xs:text-xs md:text-lg pb-2">Co-founded a subscription, booking &amp; points based business for restaurants/cafes in Tripoli, Libya.</li>
+                <li class="xs:text-xs md:text-lg pb-2">Fully responsible of the technology side of the business from developing a phone application for users and platform for business owners.</li>
+                <li class="xs:text-xs md:text-lg pb-2">Utilised NFC technology for users to attend bookings and collect points to redeem in restaurants/cafes.</li>
+                <li class="xs:text-xs md:text-lg pb-2">Sold after maturity.</li>
+              </div>
+              </details>
+              <h3 class="xs:text-md md:text-xl pl-2 xs:pt-4 md:pb-2 font-semibold md:text-end">Education</h3>  
+              <details class="open:bg-blue-400 duration-300 rounded-t-lg border-t border-x border-blue-400 hover:bg-blue-400">
+                <summary class="relative bg-inherit px-5 py-3 xs:text-md md:text-2xl cursor-pointer xs:h-20 md:h-28">
+                  Masters in Science(MSc)
+                  <img class="xs:w-16 md:w-32 h-auto absolute top-3.5 right-0 my-6 mx-4" src="img/UoS_logo.png" alt="University_of_Surrey_logo">
+                </summary>
+                <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                  <div class="pb-2">
+                    <h3 class="xs:text-md md:text-lg font-semibold">MSc Management Information Systems <span class="xs:text-md md:text-lg inline">[2014 - 2015]</span></h3>
+                  </div>
+                  <li class="xs:text-xs md:text-lg pb-2">Agile Web Development.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Challenges for Computing Professionals.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Databases and Knowledge Discovery.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Information Systems Development.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Intelligent Information Systems.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Project Management and Business Strategy.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Information Security Management.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">HTML5 and CSS3 for Mobile Applications.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Cloud Computing.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Information Security for Business and Government.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Enterprise System Development.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Final Year Project.</li>
+                </div>
+
+              </details>
+              <details class="open:bg-blue-400 duration-300 border border-blue-400 hover:bg-blue-400">
+                <summary class="relative bg-inherit px-5 py-3 xs:text-md md:text-2xl cursor-pointer xs:h-20 md:h-28">
+                  Bachelor in Engineering(BEng)
+                  <img class="xs:w-16 md:w-32 h-auto absolute top-3.5 right-0 my-6 mx-4" src="img/UoS_logo.png" alt="University_of_Surrey_logo">
+                </summary>
+                <div class="bg-slate-100 px-5 py-3 border border-gray-300 text-sm font-light">
+                  <div class="pb-2">
+                    <h3 class="xs:text-md md:text-lg font-semibold">BEng Electronics Engineering <span class="xs:text-md md:text-lg inline">[2012 - 2014]</span></h3>
+                  </div>
+                  <li class="xs:text-xs md:text-lg pb-2">Analogue Electronics.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Computers and programming in the C language.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Digital Logic and Digital Electronics.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Electronic Circuits Theory and Analysis.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Engineering Mathematics.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Engineering Science.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Laboratories, Design and Professional Studies.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Data and Internet Networking.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Digital Communications.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Digital Signal Processing.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Optoelectronics.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">RF and Microwave Fundamentals.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">Silicon Devices and Technology.</li>
+                  <li class="xs:text-xs md:text-lg pb-2">&amp; Many more.</li>
+                </div>
+
+              </details>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="backdrop-opacity-10 backdrop-invert bg-grey-400/90 drop-shadow-[0_0px_100px_rgba(0,0,0,0.25)] pt-28 pb-10">
+      <div class="flex items-center justify-between mx-auto">
+        <div class="flex flex-row mx-auto space-x-6">
+          <a class="hover:bg-blue-400 duration-500 rounded-lg" href="https://www.instagram.com/ziad_azzabi/"><img class="xs:w-8 md:w-12 h-auto" src="img/ig.png" alt="Instagram_Icon"></a>
+          <a class="hover:bg-blue-400 duration-500 rounded-lg" href="https://www.linkedin.com/in/ziadazzabi/"><img class="xs:w-8 md:w-12 h-auto" src="img/lk.png" alt="LinkedIn_Icon"></a>
+          <a class="hover:bg-blue-400 duration-500 rounded-lg" href="mailto:ziad@azzabi.co.uk"><img class="xs:w-8 md:w-12 h-auto" src="img/email.png" alt="Email_Icon"></a>
+          <a class="hover:bg-blue-400 duration-500 rounded-full" href="https://github.com/za00033"><img class="xs:w-8 md:w-12 h-auto" src="img/git.png" alt="Github_Icon"></a>
+        </div>
+      </div>
+      <div class="flex items-center pt-5">
+        <p class="mx-auto text-center">Created using 
+          <a class="text-sm hover:bg-blue-400 duration-500" href="https://nodejs.org/">NodeJs</a>, 
+          <a class="text-sm hover:bg-blue-400 duration-500" href="https://expressjs.com/">ExpressJs</a> &amp; 
+          <a class="text-sm hover:bg-blue-400 duration-500" href="https://tailwindcss.com/">TailwindCSS.</a></p>
+      </div>
+      <div class="flex items-center">
+        <p class="mx-auto text-sm">By Ziad Azzabi [2022]</p>
+      </div>
+    </footer>
+  <script src="main.js"></script>
+
+</body>
+  <script src="main.js"></script>
+</html>
