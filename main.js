@@ -19,6 +19,7 @@ expl1_h1.addEventListener("mouseover", () => {
 expl1_h1.addEventListener("mouseout", () => {
   expl1.classList.toggle("hidden");
 });
+
 //Knowledge section [expl2_h1, expl2]
 const expl2_h1 = document.querySelector(".expl2_h1");
 const expl2 = document.querySelector(".expl2");
@@ -91,5 +92,13 @@ $(window).scroll(function() {
 }).scroll();
 
 //-----------------------------------------------------
+//Adding portait img change on mousehover
+function onHover()
+{
+  $("#portrait_img").attr('src', '/img/ziad.png');
+}
 
-
+function offHover()
+{
+    $("#portrait_img").attr('src', '/img/ziad_b.gif');
+}

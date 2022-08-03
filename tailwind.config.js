@@ -6,7 +6,8 @@ module.exports = {
   content: [
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
-    './index.html'
+    './index.html',
+    './projects.html'
   ],
   theme: {
     screens:{// Here we can specify the screen sizes

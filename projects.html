@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="img/za_logo1.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>ZA | Projects</title>
+</head>
+
+<body class="w-screen font-mono text-blue-900 bg-green-100" style="transition: background-color 1s ease;">
+    <!--Below is a hidden div for tailwind to add these colors when compailing since Tailwind does not add classes if they are not used in the code-->
+    <div class="hidden bg-slate-100 bg-red-100 bg-blue-100 bg-green-100 bg-red-300 bg-blue-300 bg-green-300"></div>
+
+    <!--Navbar-->
+    <nav
+        class="w-auto sticky top-0 z-50 flex flex-wrap py-6 backdrop-opacity-10 backdrop-invert bg-grey-400/90 drop-shadow-xl">
+        <div class="flex justify-between container mx-auto">
+            <div class="px-5">
+                <img class="w-12 h-auto rounded-lg mx-auto" src="img/za_logo1.png" alt="za_logo">
+            </div>
+            <div class="space-x-6 text-sm hidden md:flex px-5">
+                <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
+                    href="index.html"><sup class="text-blue-400">01.</sup>About</a>
+                <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
+                    href="index.html"><sup class="text-blue-400">02.</sup>Knowledge</a>
+                <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
+                    href="projects.html"><sup class="text-blue-400">03.</sup>Projects</a>
+                <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
+                    href="mailto:ziad@azzabi.co.uk"><sup class="text-blue-400">04.</sup>Contact</a>
+                <a class="" href="pdf/Ziad_Azzabi_CV.pdf" target="_blank">
+                    <button
+                        class="text-sm text-blue-900 border border-blue-900 hover:bg-blue-400 transition duration-300 rounded-full py-2 px-5">Resume
+                        | CV</button>
+                </a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex justify-end">
+                <button class="outline-none mobile-menu-button">
+                    <svg class="w-6 h-6 text-blue-900" x-show="!showMenu" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu py-5 container mx-auto">
+            <ul class="divide-y divide-blue-400">
+                <li><a href="index.html" class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400"><sup
+                            class="text-blue-400">01.</sup>About</a></li>
+                <li><a href="index.html"
+                        class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400 transition duration-300"><sup
+                            class="text-blue-400">02.</sup>Knowledge</a></li>
+                <li><a href="projects.html"
+                        class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400 transition duration-300"><sup
+                            class="text-blue-400">03.</sup>Projects</a></li>
+                <li><a href="mailto:ziad@azzabi.co.uk"
+                        class="block text-sm px-2 py-4 text-blue-900 hover:text-blue-400 transition duration-300"><sup
+                            class="text-blue-400">04.</sup>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="md:container mx-auto">
+        <!--flex auto height & width div-->
+        <div class="min-h-screen py-24">
+            <h1 class="pb-24 text-center xs:text-2xl md:text-5xl font-semibold">
+                <sup class="text-blue-400">03.</sup>Projects
+            </h1>
+            <div class="grid grid-cols-1 gap-4">
+                
+                <div>
+                    <div class="panel justify-around items-center mx-auto">
+                        <div class="mx-auto my-auto relative bg-white shadow-lg sm:rounded-3xl bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
+                          <div class="pt-4 pb-10">
+                            <h1 class="pl-4 xs:text-lg md:text-xl font-semibold">
+                              <sup class="pr-2 text-blue-400">I.</sup>Web | Frond End
+                            </h1>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <div class="panel justify-around items-center mx-auto">
+                        <div class="mx-auto my-auto relative bg-white shadow-lg sm:rounded-3xl bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
+                          <div class="pt-4 pb-10">
+                            <h1 class="pl-4 xs:text-lg md:text-xl font-semibold">
+                              <sup class="pr-2 text-blue-400">II.</sup>3D Prints
+                            </h1>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <div class="panel justify-around items-center mx-auto">
+                        <div class="mx-auto my-auto relative bg-white shadow-lg sm:rounded-3xl bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
+                          <div class="pt-4 pb-10">
+                            <h1 class="pl-4 xs:text-lg md:text-xl font-semibold">
+                              <sup class="pr-2 text-blue-400">III.</sup>Data Analysis
+                            </h1>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    <!--Footer-->
+    <footer
+        class="backdrop-opacity-10 backdrop-invert bg-grey-400/90 drop-shadow-[0_0px_100px_rgba(0,0,0,0.25)] pt-28 pb-10">
+        <div class="flex items-center justify-between mx-auto">
+            <div class="flex flex-row mx-auto space-x-6">
+                <a class="hover:bg-blue-400 duration-500 rounded-lg" href="https://www.instagram.com/ziad_azzabi/"><img
+                        class="xs:w-8 md:w-12 h-auto" src="img/ig.png" alt="Instagram_Icon"></a>
+                <a class="hover:bg-blue-400 duration-500 rounded-lg" href="https://www.linkedin.com/in/ziadazzabi/"><img
+                        class="xs:w-8 md:w-12 h-auto" src="img/lk.png" alt="LinkedIn_Icon"></a>
+                <a class="hover:bg-blue-400 duration-500 rounded-lg" href="mailto:ziad@azzabi.co.uk"><img
+                        class="xs:w-8 md:w-12 h-auto" src="img/email.png" alt="Email_Icon"></a>
+                <a class="hover:bg-blue-400 duration-500 rounded-full" href="https://github.com/za00033"><img
+                        class="xs:w-8 md:w-12 h-auto" src="img/git.png" alt="Github_Icon"></a>
+            </div>
+        </div>
+        <div class="flex items-center pt-5">
+            <p class="mx-auto text-center">Created using
+                <a class="text-sm hover:bg-blue-400 duration-500" href="https://nodejs.org/">NodeJs</a>,
+                <a class="text-sm hover:bg-blue-400 duration-500" href="https://expressjs.com/">ExpressJs</a> &amp;
+                <a class="text-sm hover:bg-blue-400 duration-500" href="https://tailwindcss.com/">TailwindCSS.</a>
+            </p>
+        </div>
+        <div class="flex items-center">
+            <p class="mx-auto text-sm">By Ziad Azzabi [2022]</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
