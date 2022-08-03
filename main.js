@@ -1,13 +1,4 @@
 
-//-----------------------------------------------------------
-/*Adding mobile button show/hide depending on screen size*/
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-// Add Event Listeners
-btn.addEventListener("click", () => {
-menu.classList.toggle("hidden");
-});
-
 //----------------------------------------------------------
 /*Adding explination of each word used in sections*/
 //About section [expl1_h1, expl1]
@@ -34,17 +25,17 @@ expl2_h1.addEventListener("mouseout", () => {
 /*Adding navbar to show on scroll up*/
 // Callback for IntersectionObserver
 const callback = function (entries) {
-    entries.forEach((entry) => {
-    //console.log(entry);
-    // Is the element in the viewport?
-    if (entry.isIntersecting) {
-        // Add the fadeIn class:
-        entry.target.classList.add("animate-fadeIn1");
-    } else {
-        // Otherwise remove the fadein class
-        entry.target.classList.remove("animate-fadeIn1");
-    }
-    });
+  entries.forEach((entry) => {
+  //console.log(entry);
+  // Is the element in the viewport?
+  if (entry.isIntersecting) {
+      // Add the fadeIn class:
+      entry.target.classList.add("animate-fadeIn1");
+  } else {
+      // Otherwise remove the fadein class
+      entry.target.classList.remove("animate-fadeIn1");
+  }
+  });
 };
 // Set up a new observer
 const observer = new IntersectionObserver(callback);
