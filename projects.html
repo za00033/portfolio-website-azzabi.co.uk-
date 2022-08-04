@@ -13,12 +13,13 @@
         rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/card.css">
     <title>ZA | Projects</title>
 </head>
 
 <body class="w-screen font-mono text-blue-900 bg-green-100" style="transition: background-color 1s ease;">
     <!--Below is a hidden div for tailwind to add these colors when compailing since Tailwind does not add classes if they are not used in the code-->
-    <div class="hidden bg-slate-100 bg-red-100 bg-blue-100 bg-green-100 bg-red-300 bg-blue-300 bg-green-300"></div>
+    <div class="hidden bg-slate-100 bg-red-100 bg-blue-100 bg-green-100 bg-red-300 bg-blue-300 bg-green-300 p-1 p-2 p-2.5 p-3 p-3.5 p-4 p-4.5 p-5 p-5.5"></div>
 
     <!--Navbar-->
     <nav
@@ -29,9 +30,9 @@
             </div>
             <div class="space-x-6 text-sm hidden md:flex px-5">
                 <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
-                    href="index.html"><sup class="text-blue-400">01.</sup>About</a>
+                    href="index.html#about"><sup class="text-blue-400">01.</sup>About</a>
                 <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
-                    href="index.html"><sup class="text-blue-400">02.</sup>Knowledge</a>
+                    href="index.html#know"><sup class="text-blue-400">02.</sup>Knowledge</a>
                 <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
                     href="projects.html"><sup class="text-blue-400">03.</sup>Projects</a>
                 <a class="text-md my-auto text-blue-900 hover:text-blue-400 transition duration-300"
@@ -81,13 +82,45 @@
                 <div>
                     <div class="panel justify-around items-center mx-auto">
                         <div class="mx-auto my-auto relative bg-white shadow-lg sm:rounded-3xl bg-clip-padding bg-opacity-25 border border-gray-200" style="backdrop-filter: blur(20px);">
-                          <div class="pt-4 pb-10">
+                            <!--title of cat-->
+                            <div class="pt-4 pb-10">
                             <h1 class="pl-4 xs:text-lg md:text-xl font-semibold">
-                              <sup class="pr-2 text-blue-400">I.</sup>Web | Frond End
+                              <sup class="pr-2 text-blue-400">I.</sup>Web | Front/Back End
                             </h1>
                           </div>
+                          <!--projects grid under cat-->
+                          <div class="grid grid-cols-3 gap-4">
+                            <!--first project-->
+                            <div class="mx-auto w-96 h-80 p-8 relative">
+                                <div class="">
+                                    <div class="z-0 circle absolute top-0 left-0">
+                                        <h3 class="z-10 text-white p-3.5">01</h3>
+                                    </div>
+                                    <div class="z-0 absolute top-0 left-0 border border-red-300">
+                                        <svg class="fill-transparent" width="350" height="300">
+
+                                            <polygon class="track round" points="220,10 300,210 170,250 123,234"></polygon>
+
+
+                                            <!--<polyline class="track round" points="80,0 280,0 350,300 0,300 0,100"></polyline>-->
+                                            <!--<polygon class="track round" points="80,0 350,0 350,300 0,300 0,100"></polygon>-->
+
+
+                                        </svg>
+                                    </div>
+                                    <h3 class="z-10 text-white p-3.5">01</h3>
+
+                                </div>
+                            </div>
+                            <!--Second project-->
+                            <div>02</div>
+                            <!--third project-->
+                            <div>03</div>
+                            <!--forth project-->
+                            <div>04</div>
+                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
 
                 <div>
@@ -99,7 +132,7 @@
                             </h1>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
 
                 <div>
@@ -111,7 +144,7 @@
                             </h1>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
 
             </div>

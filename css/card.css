@@ -1,0 +1,15 @@
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #011c61;
+    border-radius: 50%;
+  }
+  .track {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+  }
+  
+  .round {
+    stroke-linejoin: round;
+  }
