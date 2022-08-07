@@ -1,15 +1,20 @@
 .circle {
-    height: 50px;
-    width: 50px;
-    background-color: #011c61;
-    border-radius: 50%;
-  }
-  .track {
-    fill: none;
-    stroke: black;
-    stroke-width: 2;
-  }
-  
-  .round {
-    stroke-linejoin: round;
-  }
+  height: 60px;
+  width: 60px;
+  background-color: #011c61;
+  border-radius: 50%;
+}
+.date-circle {
+  height: 60px;
+  width: 120px;
+  background-color: #011c61;
+  border-radius: 30%;
+}
+.track {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+}
+.round {
+  stroke-linejoin: round;
+}
