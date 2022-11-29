@@ -977,6 +977,14 @@ video {
   padding: 19px;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1077,8 +1085,12 @@ video {
   padding-top: 18px;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -1092,6 +1104,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-semibold {
@@ -1271,6 +1288,11 @@ video {
 
   .xs\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xs\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
