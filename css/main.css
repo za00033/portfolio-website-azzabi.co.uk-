@@ -723,10 +723,6 @@ video {
   min-height: 100vh;
 }
 
-.min-h-0 {
-  min-height: 0px;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -751,38 +747,8 @@ video {
   width: 22rem;
 }
 
-.w-14 {
-  width: 3.5rem;
-}
-
 .w-\[118px\] {
   width: 118px;
-}
-
-.min-w-fit {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
-.min-w-max {
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
-.min-w-min {
-  min-width: -webkit-min-content;
-  min-width: -moz-min-content;
-  min-width: min-content;
-}
-
-.min-w-0 {
-  min-width: 0px;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 @-webkit-keyframes fadeIn {
@@ -1014,10 +980,6 @@ video {
   padding: 19px;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1078,34 +1040,14 @@ video {
   padding-bottom: 6rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pt-5 {
@@ -1352,11 +1294,6 @@ video {
   .xs\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .xs\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
