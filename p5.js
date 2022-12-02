@@ -1,8 +1,8 @@
 
 
 function setup(){
-    var canvas = createCanvas(displayWidth, displayHeight);
-    canvas.parent('p5can');
+    var canvas = createCanvas(384, 90);
+    canvas.parent('p5scan');
     
 }
 
