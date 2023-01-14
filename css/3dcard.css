@@ -1,22 +1,21 @@
 .card {
     width: 190px;
-    height: 180px;
+    height: 220px;
     background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
     border-radius: 20px;
     transition: all .3s;
    }
    
    .card2 {
-    width: 190px;
+    width: 220px;
     height: 180px;
     background-color: #ffffff;
-    border-radius: 18px;
     transition: all .2s;
    }
    
    .card2:hover {
     transform: scale(0.98);
-    border-radius: 18px;
+    border-radius: 0;
    }
    
    .card:hover {
@@ -26,7 +25,7 @@
 
    .cardex {
     width: 190px;
-    height: 180px;
+    height: 400px;
     background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
     border-radius: 20px;
     transition: all .3s;
@@ -34,7 +33,7 @@
    
    .card2ex {
     width: 190px;
-    height: 180px;
+    height: 400px;
     background-color: #ffffff;
     border-radius: 18px;
     transition: all .2s;
@@ -48,3 +47,99 @@
    .cardex:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    }
+
+   .card22 {
+    width: 220px;
+    height: 400px;
+    background-color: #ffffff;
+    transition: all .2s;
+   }
+
+
+
+/*Mac Window Card*/
+.cardmac {
+    width: 220px;
+    height: 275px;
+    margin: 0 auto;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+   }
+   
+  .cardmac2 {
+  width: 220px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #F8FBFE;
+  border-radius: 8px;
+  z-index: 1;
+  }
+   
+
+   .toolsmac {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .circlemac {
+    padding: 0 4px;
+   }
+   
+   .boxmac {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .redmac {
+    background-color: #ff605c;
+   }
+   
+   .yellowmac {
+    background-color: #ffbd44;
+   }
+   
+   .greenmac {
+    background-color: #00ca4e;
+   }
+   
+
+   /*.stl Button*/
+   .buttonmac {
+    /* Variables */
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #011C61;
+   /*font-size: 17px;
+   font-weight: bold;*/
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+  }
+  
+  .button_topmac {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.25em 1em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_topmac {
+    /* Pull the button upwards when hovered */
+   transform: translateY(-0.33em);
+  }
+  
+  button:active .button_topmac {
+    /* Push the button downwards when pressed */
+   transform: translateY(0);
+  }
